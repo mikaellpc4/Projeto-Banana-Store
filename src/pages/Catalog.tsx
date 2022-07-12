@@ -1,3 +1,6 @@
-export function Catalog(){
-    return <h1> Catalog </h1>
+import { useParams } from "react-router-dom";
+
+export function Catalog() {
+  let { filters } = useParams();
+  return <h1> Catalogo com filtros: {filters} </h1>;
 }
